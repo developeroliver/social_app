@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+
+ThemeData lightMode = ThemeData(
+  brightness: Brightness.light,
+  colorScheme: ColorScheme.light(
+    background: Colors.grey.shade300,
+    primary: Colors.grey.shade200,
+    secondary: Colors.grey.shade500,
+    inversePrimary: Colors.grey.shade600,
+  ),
+  textTheme: ThemeData.light().textTheme.apply(
+        bodyColor: Colors.grey[800],
+        displayColor: Colors.black,
+      ),
+  appBarTheme: AppBarTheme(
+    backgroundColor: Colors.grey.shade300,
+    elevation: 0,
+    titleTextStyle: TextStyle(
+      color: Colors.grey.shade600,
+      fontSize: 16,
+    ),
+    iconTheme: IconThemeData(
+      color: Colors.grey.shade600,
+    ),
+  ),
+);
